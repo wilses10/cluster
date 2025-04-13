@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: website1
+  namespace: ocean
 spec:
   containers:
     - name: bank
