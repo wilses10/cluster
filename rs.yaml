@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: replica
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: website
+  spec:
+    containers:
+      - name: bank
+        image: wilses10/wilses10-digi-bankapp:1.0
+        ports:
+          - containerPort: 4545
