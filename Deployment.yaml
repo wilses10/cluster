@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata: 
+  name: build 
+spec:
+  replicas: 3
+  selector:
+    matchLabels: 
+      web: app 
+  template: 
+    metadata:
+      labels: 
+        web: app 
+    spec: 
+      containers: 
+        - name: soccer 
+          image: wilses10/website:1.0
+          ports: 
+            - containerPort: 3000
