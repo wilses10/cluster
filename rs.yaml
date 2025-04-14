@@ -4,6 +4,9 @@ metadata:
   name: replica
 spec:
   replicas: 3
+  selector:
+    matchLabels:
+      app: website
   template:
     metadata:
       labels:
