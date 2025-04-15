@@ -15,5 +15,12 @@ spec:
       containers: 
         - name: soccer 
           image: wilses10/website:1.0
+          resources:
+            limits:
+              cpu: 50m
+              memory: 250Mi
+            requests:
+              cpu: 25m
+              memory: 120Mi
           ports: 
             - containerPort: 3000
