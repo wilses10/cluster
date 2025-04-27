@@ -33,7 +33,7 @@ spec:
   selector: 
     web: bank 
   ports:
-    port: 4546
-    targetPort: 4545 
-    protocol: TCP 
+    - port: 4546
+      targetPort: 4545 
+      protocol: TCP 
   type: NodePort 
