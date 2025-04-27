@@ -36,4 +36,4 @@ spec:
     port: 4546
     targetPort: 4545 
     protocol: TCP 
-  type: ClusterIP 
+  type: NodePort 
